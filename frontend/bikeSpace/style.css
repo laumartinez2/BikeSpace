@@ -1,8 +1,82 @@
+/*
 
-#eslogan{
-    background-image: url("img/background-image.png");
+-----COLORS----
+
+almost-black: #1A1A1A
+green:
+dark-green: #006d6d
+white: #ffffff
+
+*/
+
+/*---- GENERAL STYLES ----*/
+body{
+    padding: 0px, margin:0px;
 }
 
-#mobil{
-    text-align: center;
+.container-fluid{
+    padding: 0px;
+}
+
+section{
+    height: 90%;
+    padding: 50px;
+}
+
+
+/*---- TEXT STYLES ----*/
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #006d6d;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #006d6d; 
+}
+
+h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h5{
+    font-size: 15px;
+    color: #006d6d;
+}
+
+
+
+/*---- HEADER ----*/
+#header{
+    background-color: aquamarine;
+}
+
+#header div{
+    padding: 15px;
+}
+
+#eslogan{
+    /*background-image: url("img/background-image.png");*/
+}
+
+#download img{
+    padding: 5px;
+}
+
+#seguridad .option{
+    padding: 15px 40px;
 }
