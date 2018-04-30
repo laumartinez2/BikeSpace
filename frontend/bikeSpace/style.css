@@ -3,16 +3,22 @@
 -----COLORS----
 
 almost-black: #1A1A1A
-green:
+green: #00E0A5
 dark-green: #006d6d
 white: #ffffff
 
 */
 
 /*---- GENERAL STYLES ----*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     padding: 0px, margin:0px;
 }
+
 
 .container-fluid{
     padding: 0px;
@@ -20,7 +26,29 @@ body{
 
 section{
     height: 90%;
-    padding: 50px;
+    padding: 40px;
+}
+
+
+/*---- BUTTON ----*/
+
+.btn {
+  flex: 1 1 auto;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 51%, #00C3B5 100%);
+}
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+      color: white;
+
 }
 
 
@@ -60,9 +88,27 @@ h5{
 
 
 
+/*---- NAVBAR ----*/
+
+.navbar-default .navbar-brand{
+    color: #00E0A5;
+    padding-left: 30px;   
+}
+
+.navbar-default .navbar-toggle{
+    border: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #00E0A5;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #00E0A5;
+}
+
 /*---- HEADER ----*/
 #header{
-    background-color: aquamarine;
+    background-color: #00E1A3;
 }
 
 #header div{
@@ -77,6 +123,60 @@ h5{
     padding: 5px;
 }
 
+
+/*---- SEGURIDAD ----*/
 #seguridad .option{
     padding: 15px 40px;
 }
+
+
+/*---- PEDALEAR ----*/
+#como-funciona{
+    background-color: #efe3cd;
+}
+
+/*---- COLABORADORES ----*/
+#parkings{
+    padding: 40px;
+}
+#parkings div{
+    padding: 20px;
+}
+
+
+/*---- FOOTER ----*/
+.main-footer{
+    background-color: #00E0A5;
+    padding-top: 30px;
+}
+.footer-copyright{
+    background-color: #1A1A1A;
+    color: gainsboro;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+footer #download{
+    padding: 20px;
+}
+
+footer .links{
+    padding-bottom: 20px;
+}
+footer .links a{
+    padding: 7px;
+}
+footer .links a{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+
+.logo_ajuntament_de_barcelona {
+    bottom: 36px;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+}
+
