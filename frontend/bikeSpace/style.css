@@ -30,6 +30,9 @@ section{
 }
 
 
+
+
+
 /*---- BUTTON ----*/
 
 .btn {
@@ -108,7 +111,19 @@ h5{
 
 /*---- HEADER ----*/
 #header{
-    background-color: #00E1A3;
+    /*background-color: #00E1A3;*/ 
+    background-image: url('img/mapa.svg');
+    background-size: cover;
+
+}
+
+#background-gradient{   
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00c3b5+0,00e0a5+100&0.5+0,0.5+100 */
+background: -moz-linear-gradient(45deg, rgba(0,195,181,0.5) 0%, rgba(0,224,165,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(0,195,181,0.5) 0%,rgba(0,224,165,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(0,195,181,0.8) 0%,rgba(0,224,165,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', endColorstr='#8000e0a5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #header div{
@@ -122,6 +137,7 @@ h5{
 #download img{
     padding: 5px;
 }
+
 
 
 /*---- SEGURIDAD ----*/
