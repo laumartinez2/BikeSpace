@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: new google.maps.LatLng(41.385216, 2.1808927),
           zoom: 16,
@@ -18,3 +18,5 @@ function initMap() {
           testimonial.innerHTML = content;
         });
       }
+
+*/
