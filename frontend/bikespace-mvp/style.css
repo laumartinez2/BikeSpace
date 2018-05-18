@@ -30,6 +30,18 @@ body{
        border-left: none;
        }
 
+
+h4{
+    color: cadetblue;
+}
+
+#colorets{
+    background-color: red;
+}
+
+#colorets img{
+    width: 20px;
+}
 /*treure barra superior títol mymaps*/
 /*div.i4ewOd-pzNkMb-haAclf.QUIbkc{
     visibility: hidden;

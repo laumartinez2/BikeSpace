@@ -28,36 +28,34 @@
 });*/
 
 
-var map, infowindow, 
+var map, 
+    infowindow, 
     features = [],
-    iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
+    //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
               parking: {
-                icon: iconBase + 'parking_lot_maps.png'
+                icon: 'assets/img/parking_lot_maps.png'
               },
               library: {
-                icon: iconBase + 'library_maps.png'
-              },
-              info: {
-                icon: iconBase + 'info-i_maps.png'
+                icon:'assets/img/library_maps.png'
               }
-            };
+    };
 
 
 function initMap() {
-    
     map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
             center: {lat: 41.385216, lng: 2.1808927}
           });
-        
+    
+
+    
+    /* Punts-Ancoratge-Bicicletes */    
     $.getJSON( "Punts-Ancoratge-Bicicletes.geojson", function( data ) {
-        
         $.each( data.features, function( index, value ) {
-            
            var feature = {
                position: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
-                type: 'info'
+                type: 'parking'
            };
             
             var marker = new google.maps.Marker({
@@ -65,10 +63,59 @@ function initMap() {
                 icon: icons[feature.type].icon,
                 map: map
               });
+            
+            var infowindow = new google.maps.InfoWindow({
+                    content: "<div id='colorets'><img src='assets/img/parking_lot_maps.png'><h4> Nom: " + value.properties.Name + "</h4>" + "<p>Preu: " + value.properties.Name + "</p></div>"
+                });
+            
+            marker.addListener('click', function() {
+                //infowindow.close();//hide the infowindow --> no funciona
+                infowindow.open(map, marker);
+            });
+
         });
     });
     
-}    
+    
+    
+    
+    /* AparcamentsServeisBicis */    
+     $.getJSON( "AparcamentsServeisBicis.geojson", function( data ) {
+        $.each( data.features, function( index, value ) {
+           var feature = {
+               position: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
+                type: 'library'
+           };
+            
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon: icons[feature.type].icon,
+                map: map
+              });
+            
+            var infowindow = new google.maps.InfoWindow({
+                    content: "<h4> Nom: " + value.properties.Name + "</h4>" + "<p>Preu: " + value.properties.Name + "</p>"
+                });
+            
+            marker.addListener('click', function() {
+                infowindow.close();//hide the infowindow --> no funciona
+                infowindow.open(map, marker);
+            });
+        });
+    });
+}
+
+
+function AutoCenter() {
+    //  Create a new viewpoint bound
+    var bounds = new google.maps.LatLngBounds();
+    //  Go through each...
+    $.each(markers, function (index, marker) {
+    bounds.extend(marker.position);
+    });
+    //  Fit these bounds to the map
+    map.fitBounds(bounds);
+}
     
     
     
