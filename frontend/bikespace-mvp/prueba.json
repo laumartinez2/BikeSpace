@@ -35,6 +35,24 @@
     "Seguridad": "Poco Seguro",
     "Latitud": "41.391549",
     "Longitud": "2.149661"
-  }  
+  },
+    {
+    "Nombre": "Nombre Parking",
+    "Direccion": "C Trafalgar 210",
+    "Telefono": "627 634 966",
+    "Precio": "Gratis",
+    "Seguridad": "Poco Seguro",
+    "Latitud": "41.390270",
+    "Longitud": "2.138151"
+  },
+    {
+    "Nombre": "Nombre Parking",
+    "Direccion": "C Trafalgar 210",
+    "Telefono": "627 634 966",
+    "Precio": "Gratis",
+    "Seguridad": "Poco Seguro",
+    "Latitud": "41.394198",
+    "Longitud": "2.145232"
+  }                
   ]
   }
