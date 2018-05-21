@@ -3,7 +3,6 @@
    <head>
       <title>BikeSpace</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <meta charset="UTF-8">
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!-- Optional theme -->
@@ -19,7 +18,7 @@
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" >
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" >
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -27,19 +26,24 @@
                   </button>
                   <a class="navbar-brand" href="#">BikeSpace</a>
                </div>
+                
                <!-- Aquí van los links -->
                <div class="collapse navbar-collapse" id="navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                     <li><a href="#seguridad">Seguridad</a></li>
-                     <li><a href="#como-funciona">Como funciona</a></li>
-                     <li><a href="#colaboradores">Colaboradores</a></li>
+                  <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                   <ul class="nav navbar-nav navbar-right">
+                     <li><a data-toggle="collapse" data-target=".nav-collapse" href="#seguridad">Seguridad</a></li>
+                     <li><a data-toggle="collapse" data-target=".nav-collapse" href="#como-funciona">Como funciona</a></li>
+                     <li><a data-toggle="collapse" data-target=".nav-collapse" href="#colaboradores">Colaboradores</a></li>
                   </ul>
+                   
                </div>
             </div>
          </nav>
          <!-- HEADER -->
-         <section id="header" class="text-center" >
-            <div clas9s="row" id="background-gradient">
+         <section id="header" class="text-center">
+            <div class="row">
                <div id="eslogan" class="col-sm-12 col-md-6">
                   <div id="logo">
                      <img src="img/logo-bike-space.png" srcset="img/logo-bike-space@2x.png 2x, img/logo-bike-space@3x.png 3x"> 
@@ -49,8 +53,8 @@
                      <h4>Parkings 100% seguros, posibilidad de reserva de forma fácil y rápida</h4>
                   </div>
                   <div id="download">
-                     <a href="#"><img src="img/ios.png" srcset="img/ios@2x.png 2x, img/ios@3x.png 3x" class="ios" alt="Download BikeSpace for iOS"></a>
-                     <a href="#"><img src="img/playstore.png" srcset="img/playstore@2x.png 2x, img/playstore@3x.png 3x" class="playstore.png" alt="Download BikeSpace for Android"></a>
+                     <a href="https://itunes.apple.com/us/app/social-bicycles/id641497286?mt=8" target="_blank"><img src="img/ios.png" srcset="img/ios@2x.png 2x, img/ios@3x.png 3x" class="ios" alt="Download BikeSpace for iOS"></a>
+                     <a href="https://play.google.com/store/newsstand/news/Bike_Hugger?id=CAow_t4T" target="_blank"><img src="img/playstore.png" srcset="img/playstore@2x.png 2x, img/playstore@3x.png 3x" class="playstore.png" alt="Download BikeSpace for Android"></a>
                   </div>
                </div>
                <div id="mobil" class="col-sm-12 col-md-6" >
@@ -67,15 +71,15 @@
             <div class="row">
                <h2>Sabemos que quieres tu bici y no quieres que te la roben.</h2>
                <div class="option col-sm-4">
-                  <img src="img/ic-verificado.svg">
+                  <img src="img/ic-lock.png">
                   <h5>Parkings verificados por nosotros</h5>
                </div>
                <div class="option col-sm-4">
-                  <img src="img/ic-lock.svg">
+                  <img src="img/ic-lock.png">
                   <h5>Parkings verificados por nosotros</h5>
                </div>
                <div class="option col-sm-4">
-                  <img src="img/ic-videollamada.svg">
+                  <img src="img/ic-lock.png">
                   <h5>Parkings verificados por nosotros</h5>
                </div>
             </div>
@@ -87,7 +91,7 @@
                <h2>Preocúpate solo de pedalear</h2>
                <p>BikeSpace te ayuda a aparcarla</p>
                <div class="option col-sm-4">
-                  <h5>1. <img src="img/ic-search.svg"
+                  <h5>1. <img src="img/ic-search.png"
                      srcset="img/ic-search@2x.png 2x,
                      img/ic-search@3x.png 3x"
                      class="ic_search">
@@ -95,13 +99,13 @@
                   </h5>
                </div>
                <div class="option col-sm-4">
-                  <h5>2. <img src="img/ic-elige.svg"
+                  <h5>2. <img src="img/ic-elige.png"
                      srcset="img/ic-elige@2x.png 2x,
                      img/ic-elige@3x.png 3x"
                      class="ic_elige">Elige</h5>
                </div>
                <div class="option col-sm-4">
-                  <h5>3. <img src="img/ic-reserva.svg" srcset="img/ic-reserva@2x.png 2x, img/ic-reserva@3x.png 3x" class="ic_reserva">
+                  <h5>3. <img src="img/ic-reserva.png" srcset="img/ic-reserva@2x.png 2x, img/ic-reserva@3x.png 3x" class="ic_reserva">
                      Reserva
                   </h5>
                </div>
@@ -158,16 +162,14 @@
  <a class="btn">¡Contáctanos!</a>
 </div>
   </section>
-          
-          
          <!--Footer-->
          <footer class="page-footer font-small blue pt-4 mt-4">
             <!--Footer Links-->
             <div class="main-footer container-fluid text-center text-md-left">
                <img src="img/logo-bike-space.png" srcset="img/logo-bike-space@2x.png 2x, img/logo-bike-space@3x.png 3x">
                <div id="download">
-                  <a href="#"><img src="img/ios.png" srcset="img/ios@2x.png 2x, img/ios@3x.png 3x" class="ios" alt="Download BikeSpace for iOS"></a>
-                  <a href="#"><img src="img/playstore.png" srcset="img/playstore@2x.png 2x, img/playstore@3x.png 3x" class="playstore.png" alt="Download BikeSpace for Android"></a>
+                  <a href="https://itunes.apple.com/us/app/social-bicycles/id641497286?mt=8" target="_blank"><img src="img/ios.png" srcset="img/ios@2x.png 2x, img/ios@3x.png 3x" class="ios" alt="Download BikeSpace for iOS"></a>
+                  <a href="https://play.google.com/store/newsstand/news/Bike_Hugger?id=CAow_t4T" target="_blank"><img src="img/playstore.png" srcset="img/playstore@2x.png 2x, img/playstore@3x.png 3x" class="playstore.png" alt="Download BikeSpace for Android"></a>
                </div>
                <div class="links">
                   <a href="#!">FAQ</a>
