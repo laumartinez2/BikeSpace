@@ -14,9 +14,18 @@
     "Direccion": "C Marina 210",
     "Telefono": "627 634 966",
     "Precio": "Gratis",
-    "Seguridad": "Muy Seguro",
+    "Seguridad": "Seguro",
     "Latitud": "41.3846313",
     "Longitud": "2.195453167"
+  },
+    {
+    "Nombre": "Nombre Parking",
+    "Direccion": "C Trafalgar 210",
+    "Telefono": "627 634 966",
+    "Precio": "Gratis",
+    "Seguridad": "Poco Seguro",
+    "Latitud": "41.38390463",
+    "Longitud": "2.182847012"
   }
   ]
   }

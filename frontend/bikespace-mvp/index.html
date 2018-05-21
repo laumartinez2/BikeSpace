@@ -4,17 +4,14 @@
       <title>BikeSpace MVP</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
-          <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="style.css">
    </head>
     
     
     <body>
-       <div><h1>HI</h1></div>
         <div id="map"></div>
-        
-        <!-- <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1lH1u4EXKBnRzSNzOBpfo-kOd3ElWj916&z=15" width="640" height="480" frameborder="0"></iframe>-->
-   
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 
         
    
@@ -25,11 +22,15 @@
         <!--<script async defer
     src="https://www.google.com/maps/d/u/0/embed?mid=1BYgZ1jgumtMMSRPCR6XHH4HW0SuDz0go&z=8">
     </script>-->
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>    
         
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJhsIGQg8ioua_zfI_g9KAeT_9AEPx24&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJhsIGQg8ioua_zfI_g9KAeT_9AEPx24&callback=initAutocomplete&libraries=places">
     </script>
-        
+
+
         
         
     </body>
