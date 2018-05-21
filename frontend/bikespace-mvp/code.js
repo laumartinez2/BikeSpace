@@ -45,7 +45,7 @@ var map,
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
             zoom: 16,
-            center: {lat: 41.385216, lng: 2.1808927}
+            center: {lat: 41.3925639, lng: 2.1375999}
           });
     
 
@@ -78,12 +78,14 @@ function initMap() {
     
     
     
-    
+        //console.log(value.Ciudad);
+        //console.log(value.Latitud, value.Longitud);
+         
     /* AparcamentsServeisBicis */    
-     $.getJSON( "AparcamentsServeisBicis.geojson", function( data ) {
-        $.each( data.features, function( index, value ) {
+     $.getJSON( "prueba.json", function( data ) {
+         $.each(data.Aparcamientos, function(index, value) {
            var feature = {
-               position: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
+               position: new google.maps.LatLng(value.Latitud, value.Longitud),
                 type: 'library'
            };
             
@@ -94,14 +96,20 @@ function initMap() {
               });
             
             var infowindow = new google.maps.InfoWindow({
-                    content: "<h4> Nom: " + value.properties.Name + "</h4>" + "<p>Preu: " + value.properties.Name + "</p>"
+                    content: "<div><h4>" + value.Nombre + "</h4>" +
+                "<p> Dirección: " + value.Direccion + "</p>"+
+                "<p> Teléfono: " + value.Telefono + "</p>" +
+                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Precio + "</p>" +
+                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Seguridad + "</p></div>"
                 });
             
             marker.addListener('click', function() {
-                infowindow.close();//hide the infowindow --> no funciona
+                //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.open(map, marker);
             });
+
         });
+
     });
 }
 
