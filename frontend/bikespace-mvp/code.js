@@ -1,44 +1,14 @@
-/*function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(41.385216, 2.1808927),
-          zoom: 16,
-          mapTypeId: 'terrain'
-        });
-
-
-    
-        var src = 'trial.kmlgg';
-        var kmlLayer = new google.maps.KmlLayer(src, {
-          suppressInfoWindows: true,
-          preserveViewport: false,
-          map: map
-        });
-        kmlLayer.addListener('click', function(event) {
-          var content = event.featureData.infoWindowHtml;
-          var testimonial = document.getElementById('capture');
-          testimonial.innerHTML = content;
-        });
-      }
-*/
-
-
-/*$(document).ready(function() {
-    $('iframe').contents().find('.i4ewOd-pzNkMb-haAclf').css('display','none');
-    $('iframe').contents().find('.QUIbkc').css('display','none');
-});*/
-
-
 var map,
     infowindow,
     features = [],
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
-              parking: {
-                icon: 'assets/img/green.png'
-              },
-              library: {
-                icon:'assets/img/black.png'
-              }
+        parking: {
+            icon: 'assets/img/green.png'
+        },
+        library: {
+            icon: 'assets/img/black.png'
+        }
     };
 
 
@@ -46,28 +16,28 @@ var map,
 
 function initAutocomplete() {
     map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: new google.maps.LatLng(41.3925639, 2.1375999)
-          });
-    
-    /* Punts-Ancoratge-Bicicletes */    
-    $.getJSON( "Punts-Ancoratge-Bicicletes.geojson", function( data ) {
-        $.each( data.features, function( index, value ) {
-           var feature = {
-               position: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
+        zoom: 16,
+        center: new google.maps.LatLng(41.38578152, 2.177163627)
+    });
+
+    /* Punts-Ancoratge-Bicicletes */
+    $.getJSON("Punts-Ancoratge-Bicicletes.geojson", function(data) {
+        $.each(data.features, function(index, value) {
+            var feature = {
+                position: new google.maps.LatLng(value.geometry.coordinates[1], value.geometry.coordinates[0]),
                 type: 'parking'
-           };
-            
+            };
+
             var marker = new google.maps.Marker({
                 position: feature.position,
                 icon: icons[feature.type].icon,
                 map: map
-              });
-            
+            });
+
             var infowindow = new google.maps.InfoWindow({
-                    content: "<div id='colorets'><img src='assets/img/parking_lot_maps.png'><h4> Nom: " + value.properties.Name + "</h4>" + "<p>Preu: " + value.properties.Name + "</p></div>"
-                });
-            
+                content: "<div id='colorets'><img src='assets/img/parking_lot_maps.png'><h4> Nom: " + value.properties.Name + "</h4>" + "<p>Preu: " + value.properties.Name + "</p></div>"
+            });
+
             marker.addListener('click', function() {
                 //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.open(map, marker);
@@ -75,51 +45,34 @@ function initAutocomplete() {
 
         });
     });
-    
-    
-    
-        //console.log(value.Ciudad);
-        //console.log(value.Latitud, value.Longitud);
-         
-    /* AparcamentsServeisBicis */    
-     $.getJSON( "prueba.json", function( data ) {
-         $.each(data.Aparcamientos, function(index, value) {
-           var feature = {
-               position: new google.maps.LatLng(value.Latitud, value.Longitud),
+
+
+    /* AparcamentsServeisBicis */
+    $.getJSON("aparcamientos.json", function(data) {
+        $.each(data.aparcamientos, function(index, value) {
+            var feature = {
+                position: new google.maps.LatLng(value.latitud, value.longitud),
                 type: 'library'
-           };
-            
+            };
+
             var marker = new google.maps.Marker({
                 position: feature.position,
                 icon: icons[feature.type].icon,
                 map: map
-              });
-            
-            /*var infowindow = new google.maps.InfoWindow({
-                    content:    "<div><h4>" + value.Nombre + "</h4>" +
-                                "<p> Dirección: " + value.Direccion + "</p>" +
-                                "<p> Teléfono: " + value.Telefono + "</p>" +
-                                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Precio + "</p>" +
-                                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Seguridad + "</p></div>"
-                
-        }
-                });*/
-             
-             
+            });
+
             infowindow = new google.maps.InfoWindow();
             marker.addListener('click', function() {
                 //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.setOptions({
-                    content: "<div><h4>" + value.Nombre + "</h4>" +
-                                "<p> Dirección: " + value.Direccion + "</p>" +
-                                "<p> Teléfono: " + value.Telefono + "</p>" +
-                                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Precio + "</p>" +
-                                "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.Seguridad + "</p></div>"
-                    
+                    content: "<div><h4>" + value.parking + "</h4>" +
+                        "<p> Dirección: " + value.direccion + "</p>" +
+                        "<p> Teléfono: " + value.telefono + "</p>" +
+                        "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.precio + "</p>" +
+                        "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.niveldeseguridad + "</p></div>"
                 });
-                infowindow.open(map, marker);   
+                infowindow.open(map, marker);
             });
-             
         });
     });
 }
@@ -129,13 +82,9 @@ function AutoCenter() {
     //  Create a new viewpoint bound
     var bounds = new google.maps.LatLngBounds();
     //  Go through each...
-    $.each(markers, function (index, marker) {
-    bounds.extend(marker.position);
+    $.each(markers, function(index, marker) {
+        bounds.extend(marker.position);
     });
     //  Fit these bounds to the map
     map.fitBounds(bounds);
-       
 }
-    
-    
-    
