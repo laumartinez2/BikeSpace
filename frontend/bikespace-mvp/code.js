@@ -69,11 +69,14 @@ function initAutocomplete() {
                         "<p> Dirección: " + value.direccion + "</p>" +
                         "<p> Teléfono: " + value.telefono + "</p>" +
                         "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
-                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>"
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>" +
+                    '<button onclick="alerta()">Reservar</button>'
                 });
                 infowindow.open(map, marker);
             });
+ 
         });
+        
     });
     
     
@@ -97,7 +100,6 @@ function initAutocomplete() {
                 infowindow.setOptions({
                     content: "<div><h4>" + value.parking + "</h4>" +
                         "<p> Dirección: " + value.direccion + "</p>" +
-                        "<p> Teléfono: " + value.telefono + "</p>" +
                         "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
                         "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>"
                 });
@@ -110,6 +112,9 @@ function initAutocomplete() {
     
 }
 
+function alerta() {
+        alert("Llena el formulario");
+}
 
 function AutoCenter() {
     //  Create a new viewpoint bound

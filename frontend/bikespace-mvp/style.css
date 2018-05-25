@@ -1,3 +1,14 @@
+/*
+
+-----COLORS----
+
+almost-black: #1A1A1A
+green: #00E0A5
+dark-green: #006d6d
+white: #ffffff
+
+*/
+
 body{
     margin: 0px;
     padding: 0px;
@@ -32,10 +43,16 @@ body{
 
 
 h4{
-    color: #00E0A5;
+    color: #006d6d;
 }
 
-
+button{
+    background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
+    border: 0px;
+    border-radius: 56.9px;
+    padding: 10px 15px;
+    color: #fff;
+}
 
 .infobox-wrapper {
     display:none;
