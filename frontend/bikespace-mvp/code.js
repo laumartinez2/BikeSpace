@@ -3,11 +3,11 @@ var map,
     features = [],
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
-        parking: {
-            icon: 'assets/img/green.png'
+        aparcamiento: {
+            icon: 'assets/img/parking.png'
         },
-        library: {
-            icon: 'assets/img/black.png'
+        anclaje: {
+            icon: 'assets/img/anclaje.png'
         }
     };
 
@@ -16,11 +16,11 @@ var map,
 
 function initAutocomplete() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
+        zoom: 18,
         center: new google.maps.LatLng(41.38578152, 2.177163627)
     });
 
-    /* Punts-Ancoratge-Bicicletes */
+    /* Punts-Ancoratge-Bicicletes
     $.getJSON("Punts-Ancoratge-Bicicletes.geojson", function(data) {
         $.each(data.features, function(index, value) {
             var feature = {
@@ -44,7 +44,7 @@ function initAutocomplete() {
             });
 
         });
-    });
+    }); */
 
 
     /* AparcamentsServeisBicis */
@@ -52,7 +52,7 @@ function initAutocomplete() {
         $.each(data.aparcamientos, function(index, value) {
             var feature = {
                 position: new google.maps.LatLng(value.latitud, value.longitud),
-                type: 'library'
+                type: 'aparcamiento'
             };
 
             var marker = new google.maps.Marker({
@@ -68,13 +68,46 @@ function initAutocomplete() {
                     content: "<div><h4>" + value.parking + "</h4>" +
                         "<p> Dirección: " + value.direccion + "</p>" +
                         "<p> Teléfono: " + value.telefono + "</p>" +
-                        "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.precio + "</p>" +
-                        "<p><img src='assets/img/parking_lot_maps.png' height='20'> " + value.niveldeseguridad + "</p></div>"
+                        "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>"
                 });
                 infowindow.open(map, marker);
             });
         });
     });
+    
+    
+    /* Punts Anclatje */
+    $.getJSON("anclajes.json", function(data) {
+        $.each(data.anclajes, function(index, value) {
+            var feature = {
+                position: new google.maps.LatLng(value.latitud, value.longitud),
+                type: 'anclaje'
+            };
+
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon: icons[feature.type].icon,
+                map: map
+            });
+
+            infowindow = new google.maps.InfoWindow();
+            marker.addListener('click', function() {
+                //infowindow.close();//hide the infowindow --> no funciona
+                infowindow.setOptions({
+                    content: "<div><h4>" + value.parking + "</h4>" +
+                        "<p> Dirección: " + value.direccion + "</p>" +
+                        "<p> Teléfono: " + value.telefono + "</p>" +
+                        "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>"
+                });
+                infowindow.open(map, marker);
+            });
+        });
+    });
+    
+    
+    
 }
 
 
