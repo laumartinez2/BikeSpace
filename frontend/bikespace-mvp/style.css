@@ -72,3 +72,8 @@ button{
     -webkit-box-shadow: 0 0  8px #000;
     box-shadow: 0 0 8px #000;
 }
+
+input{
+    margin-left: 200px;
+    z-index: 100 !important;
+}

@@ -7,7 +7,7 @@ var map,
             icon: 'assets/img/parking.png'
         },
         anclaje: {
-            icon: 'assets/img/anclaje.png'
+            icon: 'assets/img/anclaje-2.png'
         }
     };
 
