@@ -17,6 +17,8 @@ body{
     overflow: hidden;
 }
 
+p{font-size: 13px;}
+
 #map{
     position: absolute;
     z-index: 1;
@@ -41,17 +43,41 @@ body{
        border-left: none;
        }
 
+/*TEXT MARKER*/
 
-h4{
-    color: #006d6d;
+.text-marker{
+    margin: 20px;
+}
+
+.text-marker h2{
+    width: 90%;
+    margin-right: -150px;
+    font-size: 20px;
+}
+
+.text-marker h3{
+    color: #808080;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 button{
+    font-size: 13px;
     background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
     border: 0px;
     border-radius: 56.9px;
-    padding: 10px 15px;
+    padding: 12px 22px;
+    margin: 10px 0px;
     color: #fff;
+}
+
+.icon-text p{
+    display: inline;
+    top: 0px;
+}
+
+.icon-text img{
+    padding: 10px 10px 0px 0px;
 }
 
 .infobox-wrapper {

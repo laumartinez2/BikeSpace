@@ -65,12 +65,12 @@ function initAutocomplete() {
             marker.addListener('click', function() {
                 //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.setOptions({
-                    content: "<div><h4>" + value.parking + "</h4>" +
-                        "<p> Dirección: " + value.direccion + "</p>" +
-                        "<p> Teléfono: " + value.telefono + "</p>" +
-                        "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
-                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>" +
-                    '<button onclick="alerta()">Reservar</button>'
+                    content: "<div class='text-marker'><h2>" + value.parking + "</h2>" +
+                        "<h3>" + value.direccion + "</h3>" +
+                        "<div class='icon-text'><img src='assets/img/ic_phone.svg'><p>" + value.telefono + "</p></div>" +
+                        "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
+                    '<button onclick="alerta()">Reservar</button></div>'
                 });
                 infowindow.open(map, marker);
             });
@@ -98,10 +98,11 @@ function initAutocomplete() {
             marker.addListener('click', function() {
                 //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.setOptions({
-                    content: "<div><h4>" + value.parking + "</h4>" +
-                        "<p> Dirección: " + value.direccion + "</p>" +
-                        "<p><img src='assets/img/euro.png' height='20'> " + value.precio + "</p>" +
-                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p></div>"
+                    content: "<div class='text-marker'><h2>" + value.parking + "</h2>" +
+                        "<h3>" + value.direccion + "</h3>" +
+                        "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
+                    '<button onclick="alerta()">Reservar</button></div>'
                 });
                 infowindow.open(map, marker);
             });
