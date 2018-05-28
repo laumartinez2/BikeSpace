@@ -4,10 +4,10 @@ var map,
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
         aparcamiento: {
-            icon: 'assets/img/parking.png'
+            icon: 'assets/img/p-particulares.png'
         },
         anclaje: {
-            icon: 'assets/img/anclaje-2.png'
+            icon: 'assets/img/circulo.png'
         }
     };
 
