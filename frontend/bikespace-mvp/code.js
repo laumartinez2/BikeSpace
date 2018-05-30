@@ -8,6 +8,9 @@ var map,
         },
         anclaje: {
             icon: 'assets/img/circulo.png'
+        },
+        reservables: {
+            icon: 'assets/img/p-reservable.png'
         }
     };
 
@@ -47,7 +50,7 @@ function initAutocomplete() {
     }); */
 
 
-    /* AparcamentsServeisBicis */
+    /* Aparcamientos */
     $.getJSON("aparcamientos.json", function(data) {
         $.each(data.aparcamientos, function(index, value) {
             var feature = {
@@ -96,6 +99,38 @@ function initAutocomplete() {
 
             infowindow = new google.maps.InfoWindow();
             marker.addListener('click', function() {
+                //infowindow.close();//hide the infowindow --> no funciona
+                infowindow.setOptions({
+                    content: "<div class='text-marker'><h2>" + value.parking + "</h2>" +
+                        "<h3>" + value.direccion + "</h3>" +
+                        "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
+                    '<button onclick="alerta()">Reservar</button></div>'
+                });
+                infowindow.open(map, marker);
+            });
+        });
+    });
+    
+    
+    
+    /* Aparcamientos Reservables */
+    $.getJSON("reservables.json", function(data) {
+        $.each(data.reservables, function(index, value) {
+              console.log(value.latitud, value.longitud);
+            var feature = {
+                position: new google.maps.LatLng(value.latitud, value.longitud),
+                type: 'reservables'
+            };
+
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon: icons[feature.type].icon,
+                map: map
+            });
+
+            infowindow = new google.maps.InfoWindow();
+            marker.addListener('click', function() {                
                 //infowindow.close();//hide the infowindow --> no funciona
                 infowindow.setOptions({
                     content: "<div class='text-marker'><h2>" + value.parking + "</h2>" +
