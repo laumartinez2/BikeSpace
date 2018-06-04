@@ -41,18 +41,6 @@ h1, h2, h3, h4, h5, p, a{
     padding: 20px 0px;
 }
 
-input{
-    font-size: 20px;
-    width: 100%;
-    padding: 10px 0px;
-    margin: 10px 0px;
-}
-
-input[type="date"]{
-    width: 46%;
-}
-
-
 
 /*TOTAL*/
 .total{
@@ -83,4 +71,67 @@ button {
     font-weight: bold;
   border-radius: 50px;
   background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
+}
+
+
+/* FORM */
+
+form{
+  text-align: left;
+}
+
+label{
+  display: block;
+  padding-top: 15px;
+  text-align: left;
+}
+
+
+.label-text{
+    color:#000;
+    cursor: text;
+    font-size: 13px;
+    line-height: 18px;
+    transform: translateY(-34px);
+    transition: all 0.1s;
+}
+
+input{
+    color: #000 !important;
+}
+
+input, textarea{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    color: white;
+    font-size: 13px;
+    outline: 0;
+    padding: 5px 0px;
+    text-align: left;
+    transition: all 0.1s;
+    width: 100%;
+    resize: none;
+} 
+
+input:focus{
+    border-bottom: 1px solid #00E1A3;
+    color: #00E1A3 !important;
+}
+
+input:focus ~ .label-text{
+    font-size: 11px;
+    transform: translateY(-50px);
+    color: #00E1A3;
+}      
+
+input:valid ~ .label-text{
+    font-size: 11px;
+    transform: translateY(-50px);
+}
+
+input[type="date"]{
+    width: 45%;
+    float: left;
+    margin: 0px 5px;
 }
