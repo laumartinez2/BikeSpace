@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/*---- TEXT STYLES ----*/
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    width: 100%;
+    padding: 10px 20px;
+    top: 0px;
+    position: fixed;
+    background: 
+    linear-gradient(
+        rgba(0, 224, 165, 1),
+        rgba(0, 195, 181, 1)
+    );
+    z-index: 1;
+}
+
+
+
+.navbar h2{
+    color: white;
+}
+
+
+
+.formulario{
+    margin-top: 90px;
+    padding: 0px 20px;
+    margin-bottom: 150px;
+}
+
+.bloque{
+    padding: 20px 0px;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+input[type="date"]{
+    width: 46%;
+}
+
+
+
+/*TOTAL*/
+.total{
+    width: 100%;
+    padding: 10px 15px;
+    bottom: 0px;
+    position: fixed;
+    background-color: white;
+    border-top: 0.5px solid #C3C3C3;
+    z-index: 1;
+}
+
+.total button{
+    float: right;
+}
+
+
+/*---- BUTTON ----*/
+
+button {
+  flex: 1 1 auto;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  border: 0px;
+  color: white;
+    font-size: 15px;
+    font-weight: bold;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
+}
