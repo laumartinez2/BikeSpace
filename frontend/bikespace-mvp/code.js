@@ -20,7 +20,7 @@ var map,
 function initAutocomplete() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
-        center: new google.maps.LatLng(41.38578152, 2.177163627)
+        center: new google.maps.LatLng(41.3747023, 2.1658516)
     });
 
     /* Punts-Ancoratge-Bicicletes
@@ -72,8 +72,7 @@ function initAutocomplete() {
                         "<h3>" + value.direccion + "</h3>" +
                         "<div class='icon-text'><img src='assets/img/ic_phone.svg'><p>" + value.telefono + "</p></div>" +
                         "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
-                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
-                    '<button onclick="alerta()">Reservar</button></div>'
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>"
                 });
                 infowindow.open(map, marker);
             });
@@ -104,8 +103,7 @@ function initAutocomplete() {
                     content: "<div class='text-marker'><h2>" + value.parking + "</h2>" +
                         "<h3>" + value.direccion + "</h3>" +
                         "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
-                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
-                    '<button onclick="alerta()">Reservar</button></div>'
+                        "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>"
                 });
                 infowindow.open(map, marker);
             });
@@ -137,7 +135,7 @@ function initAutocomplete() {
                         "<h3>" + value.direccion + "</h3>" +
                         "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
                         "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
-                    '<button onclick="alerta()">Reservar</button></div>'
+                    "<button onclick=window.location.href='reserva/reserva.html'>Reservar</button></div>"
                 });
                 infowindow.open(map, marker);
             });

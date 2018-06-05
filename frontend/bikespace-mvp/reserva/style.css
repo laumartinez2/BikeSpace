@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 /*---- TEXT STYLES ----*/
@@ -25,8 +26,9 @@ h1, h2, h3, h4, h5, p, a{
 
 
 
-.navbar h2{
+h1{
     color: white;
+    font-size: 1.5em;
 }
 
 
@@ -45,7 +47,7 @@ h1, h2, h3, h4, h5, p, a{
 /*TOTAL*/
 .total{
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px 15px 20px 15px;
     bottom: 0px;
     position: fixed;
     background-color: white;
@@ -57,12 +59,20 @@ h1, h2, h3, h4, h5, p, a{
     float: right;
 }
 
+.var-precio{
+    padding: 0px 10px;
+    font-weight: normal;
+}
+
+.total p{
+    font-weight: bold;
+}
 
 /*---- BUTTON ----*/
 
 button {
   flex: 1 1 auto;
-  margin: 15px;
+  
   padding: 15px 30px;
   text-align: center;
   border: 0px;

@@ -76,3 +76,8 @@
         $('.float-label-control').floatLabels();
     });
 })(jQuery);
+
+
+function alerta() {
+        alert("Tu reserva está en tramite. Rebrás la confirmación del parking en un tiempo máximo de 15 minutos");
+}
