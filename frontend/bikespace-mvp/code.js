@@ -3,13 +3,13 @@ var map,
     features = [],
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
-        reservables: {
-            icon: 'assets/img/p-particulares.png'
+        aparcamiento: {
+            icon: 'assets/img/p-aparcamiento.png'
         },
         anclaje: {
             icon: 'assets/img/circulo.png'
         },
-        aparcamiento: {
+        reservables: {
             icon: 'assets/img/p-reservable.png'
         }
     };
