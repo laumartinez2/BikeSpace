@@ -122,6 +122,7 @@ input, textarea{
     transition: all 0.1s;
     width: 100%;
     resize: none;
+    border-radius: 0px;
 } 
 
 input:focus{

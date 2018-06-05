@@ -3,13 +3,13 @@ var map,
     features = [],
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
-        aparcamiento: {
+        reservables: {
             icon: 'assets/img/p-particulares.png'
         },
         anclaje: {
             icon: 'assets/img/circulo.png'
         },
-        reservables: {
+        aparcamiento: {
             icon: 'assets/img/p-reservable.png'
         }
     };
@@ -18,11 +18,50 @@ var map,
 
 
 function initAutocomplete() {
-    map = new google.maps.Map(document.getElementById('map'), {
+    
+    var styledMapType = new google.maps.StyledMapType([
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+],{name: 'Styled Map'});
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
-        center: new google.maps.LatLng(41.3747023, 2.1658516)
+        center: new google.maps.LatLng(41.3747023, 2.1658516),
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+          }
     });
-
+    
+    //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+    
+    
+    
     /* Punts-Ancoratge-Bicicletes
     $.getJSON("Punts-Ancoratge-Bicicletes.geojson", function(data) {
         $.each(data.features, function(index, value) {
