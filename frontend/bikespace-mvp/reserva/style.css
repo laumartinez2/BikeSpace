@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /*---- TEXT STYLES ----*/
@@ -16,11 +16,7 @@ h1, h2, h3, h4, h5, p, a{
     padding: 10px 20px;
     top: 0px;
     position: fixed;
-    background: 
-    linear-gradient(
-        rgba(0, 224, 165, 1),
-        rgba(0, 195, 181, 1)
-    );
+    background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
     z-index: 1;
 }
 
@@ -31,23 +27,35 @@ h1{
     font-size: 1.5em;
 }
 
+.fa{
+    float: right;
+    font-size: 1.7em !important;
+    color: white;
+    padding: 15px;
+}
+
 
 
 .formulario{
     margin-top: 90px;
-    padding: 0px 20px;
     margin-bottom: 150px;
 }
 
+form{
+    padding: 0px 20px;
+    overflow-x: hidden;
+}
+
 .bloque{
-    padding: 20px 0px;
+    margin-top: 40px;
+    margin-bottom: 100px;
 }
 
 
 /*TOTAL*/
 .total{
-    width: 100%;
-    padding: 10px 15px 20px 15px;
+    width: 90%;
+    padding: 20px 15px 20px 15px;
     bottom: 0px;
     position: fixed;
     background-color: white;
@@ -145,4 +153,8 @@ input[type="date"]{
     width: 45%;
     float: left;
     margin: 0px 5px;
+}
+
+.email{
+    transform: translateY(-45px);
 }
