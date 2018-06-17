@@ -59,7 +59,7 @@ h3{
 
 
 .load{
-    background-image: url('/assets/img/parking.jpg');
+    background-image: url('../assets/img/parking.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
