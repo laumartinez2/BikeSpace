@@ -43,7 +43,7 @@ section{
   background-size: 200% auto;
   color: white;
   border-radius: 50px;
-  background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 51%, #00C3B5 100%);
+background-color: #f7a002;
 }
 
 .btn:hover {
@@ -53,6 +53,10 @@ section{
 
 #download a:hover{
     opacity: 0.7;
+}
+
+#download2{
+    padding: 30px 20px;
 }
 
 
@@ -75,13 +79,14 @@ h2{
 
 h3{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     color: #006d6d; 
 }
 
 h4{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.4em;
     color: #ffffff;
 }
 

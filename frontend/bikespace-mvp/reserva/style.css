@@ -52,6 +52,61 @@ form{
 }
 
 
+
+.logo{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00e0a5+0,00d39b+100 */
+background: #00e0a5; /* Old browsers */
+background: -moz-linear-gradient(top, #00e0a5 0%, #00d39b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #00e0a5 0%,#00d39b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #00e0a5 0%,#00d39b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e0a5', endColorstr='#00d39b',GradientType=0 ); /* IE6-9 */
+   
+    padding: 4%;
+    text-align: left;
+
+
+}
+
+
+
+.rebuda{
+    text-align: center;
+    background-color: white;
+     position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    height: 100% ;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    bottom: 0;
+}
+
+
+
+.missatge{
+    padding: 30% 50px 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*TOTAL*/
 .total{
     width: 90%;
