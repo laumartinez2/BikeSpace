@@ -49,7 +49,7 @@ function initAutocomplete() {
     
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
-        center: new google.maps.LatLng(41.3747023, 2.1658516),
+        center: new google.maps.LatLng(41.3753, 2.1658516),
         mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']
@@ -90,7 +90,7 @@ function initAutocomplete() {
 
 
     /* Aparcamientos */
-    $.getJSON("aparcamientos.json", function(data) {
+    $.getJSON("assets/jsons/aparcamientos.json", function(data) {
         $.each(data.aparcamientos, function(index, value) {
             var feature = {
                 position: new google.maps.LatLng(value.latitud, value.longitud),
@@ -122,7 +122,7 @@ function initAutocomplete() {
     
     
     /* Punts Anclatje */
-    $.getJSON("anclajes.json", function(data) {
+    $.getJSON("assets/jsons/anclajes.json", function(data) {
         $.each(data.anclajes, function(index, value) {
             var feature = {
                 position: new google.maps.LatLng(value.latitud, value.longitud),
@@ -152,7 +152,7 @@ function initAutocomplete() {
     
     
     /* Aparcamientos Reservables */
-    $.getJSON("reservables.json", function(data) {
+    $.getJSON("assets/jsons/reservables.json", function(data) {
         $.each(data.reservables, function(index, value) {
               console.log(value.latitud, value.longitud);
             var feature = {
@@ -174,7 +174,7 @@ function initAutocomplete() {
                         "<h3>" + value.direccion + "</h3>" +
                         "<div class='icon-text'><img src='assets/img/euro.png' height='20'><p>" + value.precio + "</p></div>" +
                         "<p><img src='assets/img/lock.png' height='20'> " + value.niveldeseguridad + "</p>" +
-                    "<button onclick=window.location.href='reserva/reserva.html'>Reservar</button></div>"
+                    "<button onclick=window.location.href='reservar.html'>Reservar</button></div>"
                 });
                 infowindow.open(map, marker);
             });

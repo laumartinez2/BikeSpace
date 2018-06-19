@@ -1,12 +1,12 @@
-/* Float Label Pattern Plugin for Bootstrap 3.1.0 by Travis Wilson
-**************************************************/
-
 (function ($) {
-    document.getElementById('fecha-inicio').min = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
     
+    /* FECHA DE RESERVA*/
+    document.getElementById('fecha-inicio').min = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
     document.getElementById('fecha-fin').min = new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000).toISOString().split("T")[0];
 
     
+    
+    /* INPUTS FLOTANTES */
     $.fn.floatLabels = function (options) {
 
         // Settings
@@ -83,17 +83,11 @@
 })(jQuery);
 
 
-function alerta() {
+/*function alerta() {
         alert("Tu reserva está en tramite. Rebrás la confirmación del parking en un tiempo máximo de 15 minutos");
 }
 
-
-
-
-
-
-
-
+*/
 
 /* Agafar el dia d'avui com a data mínima de reserva
 
