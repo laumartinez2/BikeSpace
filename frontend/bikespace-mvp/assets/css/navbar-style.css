@@ -1,8 +1,0 @@
-.navbar{
-    width: 100%;
-    padding: 20px;
-    top: 0px;
-    position: fixed;
-    background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
-    z-index: 1;
-}
