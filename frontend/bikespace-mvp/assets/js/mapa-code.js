@@ -4,13 +4,13 @@ var map,
     //iconBase = 'https://maps.google.com/mapfiles/kml/shapes/',
     icons = {
         aparcamiento: {
-            icon: 'assets/img/p-aparcamiento.png'
+            icon: 'assets/img/parking.png'
         },
         anclaje: {
-            icon: 'assets/img/circulo.png'
+            icon: 'assets/img/anclaje.png'
         },
         reservables: {
-            icon: 'assets/img/p-reservable.png'
+            icon: 'assets/img/favorite.png'
         }
     };
 
