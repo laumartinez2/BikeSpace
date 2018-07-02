@@ -36,14 +36,16 @@ section{
 .btn {
   flex: 1 1 auto;
   margin: 15px;
-  padding: 15px 30px;
+  padding: 10px 20px;
+  margin: 3%;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
   border-radius: 50px;
-background-color: #f7a002;
+background-color: #003686;
+    min-width: 150px;
 }
 
 .btn:hover {
@@ -65,26 +67,34 @@ h1, h2, h3, h4, h5, p, a{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    font-size: 25px;
+p{
+    font-size: 17px;    
+    color: #00110E;
     font-weight: 600;
-    color: #006d6d;
+}
+
+h1{
+    font-size: 26px;
+    font-weight: 800;
+    color: #008672;
 }
 
 h2{
     font-size: 20px;
     font-weight: 600;
+    padding-bottom: 20px;
     color: #1A1A1A;
 }
+
 
 h3{
     font-size: 20px;
     font-weight: 400;
-    color: #006d6d; 
+    color: #008672; 
 }
 
 h4{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 200;
     line-height: 1.4em;
     color: #ffffff;
@@ -92,7 +102,7 @@ h4{
 
 h5{
     font-size: 15px;
-    color: #006d6d;
+    color: #008672;
 }
 
 
@@ -207,10 +217,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     padding: 5px;
 }
 
+
+#download2{
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+}
 #mobil{
-    padding-top: 30px;
+    padding: 0;
+    width: 100%;
+    max-height: 500px;
+    
 }
 
+#mockup{
+    max-width: 100%;
+}
 
 /*---- SEGURIDAD ----*/
 #seguridad .option{
@@ -220,14 +242,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 /*---- PEDALEAR ----*/
 #como-funciona{
-    background-color: #efe3cd;
+    padding: 100px 0;
+    background-color: black;
 }
+
+#ayuda {
+    color: white;
+}
+
 
 /*---- COLABORADORES ----*/
 #colaboradores{
     margin: 0px;
     height: 100%;
-    padding: 50px 0;
+    padding: 20px 0 50px 0;
     
     
 }
@@ -241,7 +269,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 #myCarousel{
     width: 100%;
     height: 150px;
-    margin: 20px 0;
     padding: 50px 0;
 }
 
@@ -251,7 +278,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 }
 
 .carousel-control{
-    color: #00E0A5;
+    padding: 0 50px;
+    color: #008672;
     text-shadow: none;
 }
 
@@ -271,7 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 /*---- FOOTER ----*/
 .main-footer{
-    background-color: #00E0A5;
+    background-color: #008672;
     padding-top: 30px;
 }
 .footer-copyright{
@@ -296,8 +324,16 @@ footer .links a{
     font-size: 12px;
 }
 
+#logopng{
+    min-width: 150px;
+    max-width: 250px;
+}
 
-
+#logopng1{
+     min-width: 150px;
+    max-width: 170px;
+    padding-bottom: 1%;
+}
 .logo_ajuntament_de_barcelona {
     bottom: 36px;
     position: fixed;
