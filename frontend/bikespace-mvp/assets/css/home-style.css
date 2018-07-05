@@ -30,24 +30,28 @@ p{font-size: 13px;}
 
 /*---- TEXT STYLES ----*/
 h1{
-    color: white;
-    font-size: 2em;
-    padding: 0 40px;
+    color: #008672;
+    font-size: 1.6em;
+    padding: 6% 1%;
 
 }
 
 h3{
-    padding: 0 60px;
-    color: white;
+    padding: 1%;
+    color: 008672;
     font-weight: 400;
     font-size: 1.3em;
 }
 
 .claim{
-    color: white;
+    color: #008672;
     padding: 0 50px;
 }
 
+#logo{
+    margin: 20%;
+    text-align: center;
+}
 
 .load{
     background-image: url('../img/parking.jpg');
@@ -69,14 +73,19 @@ h3{
 }
 
 .rowload{
+    background-color: rgba(255,255,255,0.97);
+    width: 80%;
+    margin: 0 7%;
+    padding: 3%;
+    border-radius: 10px;
     position: relative;
-    top: 30%;
+    top: 20%;
     text-align: center;
 }
 
 
 button{
-    font-size: 13px;
+    font-size: 18px;
     background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
     border: 0px;
     border-radius: 56.9px;
@@ -116,7 +125,7 @@ button{
 }
 
 button{
-    font-size: 13px;
+    font-size: 17px;
     background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
     border: 0px;
     border-radius: 56.9px;
