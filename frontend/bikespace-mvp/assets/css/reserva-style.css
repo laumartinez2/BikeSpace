@@ -81,7 +81,7 @@ background-color: #008672;
 
 
 .missatge{
-    padding: 35% 5%;
+    padding: 15% 5%;
     text-align: center;
 }
 
@@ -197,4 +197,8 @@ input[type="date"]{
 
 .email{
     transform: translateY(-45px);
+}
+
+@media only screen and (max-width: 768px) {
+    .missatge{padding: 35% 5%;}
 }
