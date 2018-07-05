@@ -32,24 +32,20 @@ p{font-size: 13px;}
 h1{
     color: #008672;
     font-size: 1.6em;
-    padding: 6% 1%;
-
 }
 
 h3{
-    padding: 1%;
-    color: 008672;
+    color: #008672;
     font-weight: 400;
     font-size: 1.3em;
 }
 
 .claim{
     color: #008672;
-    padding: 0 50px;
 }
 
 #logo{
-    margin: 20%;
+    margin: 15% 0px 15%;
     text-align: center;
 }
 
@@ -73,16 +69,18 @@ h3{
 }
 
 .rowload{
+    margin: 0 4%;
     background-color: rgba(255,255,255,0.97);
-    width: 80%;
-    margin: 0 7%;
     padding: 3%;
     border-radius: 10px;
-    position: relative;
-    top: 20%;
+    position: absolute;
     text-align: center;
+    bottom: 4%;
 }
 
+ .rowload-2{
+    padding:  0px 25%;
+}
 
 button{
     font-size: 18px;
@@ -165,4 +163,10 @@ button{
 input{
     margin-left: 200px;
     z-index: 100 !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #logo{margin: 35% 0;}
+     .rowload-2{padding:  0px;}
 }
