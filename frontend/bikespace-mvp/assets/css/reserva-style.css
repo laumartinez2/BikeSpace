@@ -49,6 +49,8 @@ form{
 
 
 
+
+
 .logo{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00e0a5+0,00d39b+100 */
 background-color: #008672;   
@@ -76,8 +78,10 @@ background-color: #008672;
     
 }
 
+
+
 .missatge{
-    padding: 130px 30px;
+    padding: 35% 5%;
     text-align: center;
 }
 
