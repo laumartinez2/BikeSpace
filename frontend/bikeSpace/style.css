@@ -192,8 +192,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     padding: 5px;
 }
 
-.download{
-    padding: 3% 0;
+#download{
+    padding: 5% 0;
+    margin: 2%;
+    
 }
 #download2{
     background-color: #ffffff;
