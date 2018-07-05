@@ -80,8 +80,9 @@ p{
 }
 
 h1{
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 800;
+    line-height: 1.3em;
     color: #008672;
 }
 
@@ -99,14 +100,14 @@ h3{
 }
 
 h4{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 200;
     line-height: 1.4em;
     color: #ffffff;
 }
 
 h5{
-    font-size: 15px;
+    font-size: 17px;
     color: #008672;
 }
 
@@ -120,8 +121,13 @@ a{
 
 .green{
     color: #ffffff;
+    padding-bottom: 6%;
+    margin-bottom: 10%;
 }
 
+.acions{
+    padding: 5%;
+}
 
 
 /*---- NAVBAR ----*/
@@ -186,7 +192,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     padding: 5px;
 }
 
-
+.download{
+    padding: 3% 0;
+}
 #download2{
     background-color: #ffffff;
     width: 100%;
@@ -195,8 +203,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 
 #mockup{
-    max-width: 100%;
-    width: 50%;
+    max-width: 350px;
+    width: 100%;
 }
 
 /*---- SEGURIDAD ----*/
@@ -207,12 +215,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 /*---- PEDALEAR ----*/
 #como-funciona{
-    padding: 100px 0;
+    padding: 7% 0;
     background-color: #008672;
 }
 
 #ayuda {
     color: white;
+    padding: 1%
 }
 
 
@@ -222,6 +231,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     height: 100%;
     padding: 50px 0 50px 0;
 }
+
+.pedalear{
+    width: 70%;
+    
+}
+
 
 #parkings{
     padding: 40px;
@@ -233,7 +248,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 #myCarousel{
     width: 100%;
     height: 150px;
-    padding: 50px 0;
+    padding: 55px 0;
+    margin: 40px 0;
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{  
@@ -274,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 }
 
 footer #download{
-    padding: 20px;
+    padding: 0px 10px;
 }
 
 footer .links{
