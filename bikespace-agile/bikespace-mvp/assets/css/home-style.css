@@ -1,0 +1,159 @@
+/* BikeSpace home-style.css */
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* TEXT STYLES */
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{font-size: 13px;}
+
+
+/* TEXT STYLES */
+
+h1{
+    color: #008672;
+    font-size: 1.6em;
+}
+
+h3{
+    color: #008672;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.claim{
+    color: #008672;
+}
+
+#logo{
+    margin: 15% 0px 15%;
+    text-align: center;
+}
+
+.load{
+    background-image: url('../img/parking.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 100% ;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    bottom: 0;
+}
+
+.rowload{
+    margin: 0 4%;
+    background-color: rgba(255,255,255,0.97);
+    padding: 3%;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    bottom: 4%;
+}
+
+ .rowload-2{
+    padding:  0px 25%;
+}
+
+button{
+    font-size: 18px;
+    background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
+    border: 0px;
+    border-radius: 56.9px;
+    padding: 12px 22px;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.button{
+    padding: 50px 0;
+    text-align: center;
+    background-color: #F4F4F4;
+}
+
+
+/*TEXT MARKER*/
+
+.text-marker{
+    margin: 20px;
+}
+
+.text-marker h2{
+    width: 90%;
+    margin-right: -150px;
+    font-size: 20px;
+}
+
+.text-marker h3{
+    color: #808080;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+button{
+    font-size: 17px;
+    background-image: linear-gradient(to right, #00C3B5 0%, #00E0A5 100%);
+    border: 0px;
+    border-radius: 56.9px;
+    padding: 12px 22px;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.icon-text p{
+    display: inline;
+    top: 0px;
+}
+
+.icon-text img{
+    padding: 10px 10px 0px 0px;
+}
+
+.infobox-wrapper {
+    display:none;
+}
+#infobox {
+    border:2px solid black;
+    margin-top: 8px;
+    background:#333;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    padding: .5em 1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow:0 -1px #000000;
+    -webkit-box-shadow: 0 0  8px #000;
+    box-shadow: 0 0 8px #000;
+}
+
+input{
+    margin-left: 200px;
+    z-index: 100 !important;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    #logo{margin: 35% 0;}
+     .rowload-2{padding:  0px;}
+}
