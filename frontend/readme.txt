@@ -13,4 +13,7 @@ https://github.com/laumartinez2/BikeSpace/blob/master/frontend/bikespace-mvp/hom
 
 
 Para ver las historias de usuario:
-Historias-usuario-BikeSpace.pdf
+BikeSpace - Historias Usuario.pdf
+
+Para ver la presentación:
+BikeSpace - Presentación Final Metodologías Ágiles.pdf
