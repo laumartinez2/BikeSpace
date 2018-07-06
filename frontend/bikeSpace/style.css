@@ -121,7 +121,6 @@ a{
 
 .green{
     color: #ffffff;
-    padding-bottom: 6%;
     margin-bottom: 10%;
 }
 
@@ -221,6 +220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     background-color: #008672;
 }
 
+
 #ayuda {
     color: white;
     padding: 1%
@@ -234,11 +234,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
     padding: 50px 0 50px 0;
 }
 
-.pedalear{
-    width: 70%;
-    
+#colaboradores p{
+    padding: 0px 60px;
 }
 
+.pedalear{
+    width: 25%;   
+}
 
 #parkings{
     padding: 40px;
@@ -393,4 +395,12 @@ footer .links a{
         max-width: 100%;
         width: 80%;
     }
+    
+    #como-funciona h1{
+        font-size: 20px;
+    }
+    
+.pedalear{
+    width: 50%;   
+}
 }
