@@ -10,7 +10,7 @@ var map,
             icon: 'assets/img/anclaje.png'
         },
         reservables: {
-            icon: 'assets/img/favorite.png'
+            icon: 'assets/img/parking.png'
         }
     };
 
@@ -427,7 +427,7 @@ function initAutocomplete() {
     });
     
     
-    /* Punts Anclatje */
+    /* Puntos Anclaje */
     $.getJSON("assets/jsons/anclajes.json", function(data) {
         $.each(data.anclajes, function(index, value) {
             var feature = {
