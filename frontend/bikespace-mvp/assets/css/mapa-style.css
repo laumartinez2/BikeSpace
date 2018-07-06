@@ -1,13 +1,5 @@
+/* BikeSpace mapa-style.css */
 
-
-/* COLORS
-
-almost-black: #1A1A1A
-green: #00E0A5
-dark-green: #006d6d
-white: #ffffff
-
-*/
 
 body{
     margin: 0px;
@@ -18,16 +10,18 @@ body{
 }
 
 
-
 /*---- TEXT STYLES ----*/
 h1, h2, h3, h4, h5, p, a{
     font-family: 'Roboto', sans-serif;
 }
 
-p{font-size: 13px;}
+p{
+    font-size: 13px;
+}
 
 
 /*TOTAL*/
+
 .total{
     width: 90%;
     padding: 20px 15px 20px 15px;
@@ -38,10 +32,8 @@ p{font-size: 13px;}
     z-index: 1;
 }
 
-
 #web{
-       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00e0a5+0,00c3b5+100 */
-    background-color: #008672; /* Old browsers */
+    background-color: #008672;
     position: absolute;
     z-index: 2;
     overflow: hidden;
@@ -58,7 +50,6 @@ p{font-size: 13px;}
     padding: 15px;
 }
 
-
 #map{
     top: 70px;
     height: 91%;
@@ -70,20 +61,20 @@ p{font-size: 13px;}
     bottom: 0;
 }
 
+#capture{
+     height: 360px;
+     width: 480px;
+     overflow: hidden;
+     float: left;
+     background-color: #ECECFB;
+     border: thin solid #333;
+     border-left: none;
+}
 
-#capture {
-       height: 360px;
-       width: 480px;
-       overflow: hidden;
-       float: left;
-       background-color: #ECECFB;
-       border: thin solid #333;
-       border-left: none;
-       }
 
 /*TEXT MARKER*/
 
-.text-marker{
+ .text-marker{
     margin: 20px;
 }
 
@@ -118,10 +109,11 @@ button{
     padding: 10px 10px 0px 0px;
 }
 
-.infobox-wrapper {
+.infobox-wrapper{
     display:none;
 }
-#infobox {
+
+#infobox{
     border:2px solid black;
     margin-top: 8px;
     background:#333;
@@ -133,7 +125,7 @@ button{
     -moz-border-radius: 2px;
     border-radius: 2px;
     text-shadow:0 -1px #000000;
-    -webkit-box-shadow: 0 0  8px #000;
+    -webkit-box-shadow: 0 0 8px #000;
     box-shadow: 0 0 8px #000;
 }
 

@@ -1,13 +1,5 @@
+/* BikeSpace home-style.css */
 
-
-/* COLORS
-
-almost-black: #1A1A1A
-green: #00E0A5
-dark-green: #006d6d
-white: #ffffff
-
-*/
 
 body{
     margin: 0px;
@@ -18,7 +10,8 @@ body{
 }
 
 
-/*---- TEXT STYLES ----*/
+/* TEXT STYLES */
+
 h1, h2, h3, h4, h5, p, a{
     font-family: 'Roboto', sans-serif;
 }
@@ -26,9 +19,8 @@ h1, h2, h3, h4, h5, p, a{
 p{font-size: 13px;}
 
 
+/* TEXT STYLES */
 
-
-/*---- TEXT STYLES ----*/
 h1{
     color: #008672;
     font-size: 1.6em;
@@ -64,8 +56,6 @@ h3{
     padding: 0;
     border: 0px;
     bottom: 0;
-    
-
 }
 
 .rowload{
@@ -92,16 +82,11 @@ button{
     color: #fff;
 }
 
-
-
 .button{
     padding: 50px 0;
     text-align: center;
     background-color: #F4F4F4;
 }
-
-
-
 
 
 /*TEXT MARKER*/
@@ -164,6 +149,9 @@ input{
     margin-left: 200px;
     z-index: 100 !important;
 }
+
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
     #logo{margin: 35% 0;}

@@ -1,20 +1,13 @@
-/*
+/* BikeSpace mapa-style.css */
 
------COLORS----
 
-almost-black: #1A1A1A
-green: #00E0A5
-dark-green: #006d6d
-white: #ffffff
-
-*/
-
-/*---- GENERAL STYLES ----*/
+/* GENERAL STYLES */
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 body{
     padding: 0px, margin:0px;
 }
@@ -29,9 +22,9 @@ section{
 }
 
 
-/*---- BUTTON ----*/
+/* BUTTONS */
 
-.btn {
+.btn{
     flex: 1 1 auto;
     margin: 15px;
     padding: 10px 20px;
@@ -46,7 +39,7 @@ section{
     min-width: 150px;
 }
 
-.btn:hover {
+.btn:hover{
     opacity: 0.7;
     color: white;
     transition: all 0.5s;
@@ -62,15 +55,14 @@ section{
     transition: all 0.3s;
 }
 
-
 #download2{
     padding: 30px 20px;
 }
 
 
-/*---- TEXT STYLES ----*/
-h1, h2, h3, h4, h5, p, a{
-    font-family: 'Roboto', sans-serif;
+/* TEXT STYLES */
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 p{
@@ -129,7 +121,7 @@ a{
 }
 
 
-/*---- NAVBAR ----*/
+/* NAVBAR */
 
 .navbar-default .navbar-brand{
     color: #008672;
@@ -155,24 +147,18 @@ a{
 }
 
 
+/* HEADER */
 
-
-/*---- HEADER ----*/
 #header{
     background: 
-    /* top, transparent red */ 
     linear-gradient(
         rgba(0, 224, 165, 0.70),
         rgba(0, 195, 181, 0.70)
     ),
-    /* bottom, image */
     url('img/mapa.svg');
-    
     background-size: cover;
 }
 
-/*#background-gradient{   
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00c3b5+0,00e0a5+100&0.5+0,0.5+100 */
 background: -moz-linear-gradient(45deg, rgba(0,195,181,0.5) 0%, rgba(0,224,165,0.5) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, rgba(0,195,181,0.5) 0%,rgba(0,224,165,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(45deg, rgba(0,195,181,0.8) 0%,rgba(0,224,165,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -193,41 +179,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 #download{
     padding: 5% 0;
-    margin: 2%;
-    
+    margin: 2%;    
 }
+
 #download2{
     background-color: #ffffff;
     width: 100%;
     margin: 0;
 }
 
-
 #mockup{
     max-width: 350px;
     width: 100%;
 }
 
-/*---- SEGURIDAD ----*/
+
+/* SEGURIDAD */
+
 #seguridad .option{
     padding: 15px 40px;
 }
 
 
-/*---- PEDALEAR ----*/
+/* PEDALEAR */
+
 #como-funciona{
     padding: 7% 0;
     background-color: #008672;
 }
 
-
-#ayuda {
+#ayuda{
     color: white;
     padding: 1%
 }
 
 
-/*---- COLABORADORES ----*/
+/* COLABORADORES */
+
 #colaboradores{
     margin: 0px;
     height: 100%;
@@ -245,6 +233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 #parkings{
     padding: 40px;
 }
+
 #parkings div{
     padding: 20px;
 }
@@ -277,15 +266,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000c3b5', e
 
 .carousel-control.right{
     background-image: none;
-
 }
 
 
-/*---- FOOTER ----*/
+/* FOOTER */
+
 .main-footer{
     background-color: #008672;
     padding-top: 30px;
 }
+
 .footer-copyright{
     background-color: #1A1A1A;
     color: gainsboro;
@@ -307,7 +297,6 @@ footer .links a{
     font-size: 12px;
 }
 
-
 #logopng{
     min-width: 150px;
     max-width: 250px;
@@ -318,6 +307,7 @@ footer .links a{
     max-width: 170px;
     padding-bottom: 1%;
 }
+
 .logo_ajuntament_de_barcelona {
     bottom: 36px;
     position: fixed;
@@ -326,8 +316,10 @@ footer .links a{
 }
 
 
+/* MEDIA QUERIES */
+
 /* DESKTOP */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px){
     #eslogan{
             padding: 100px 0px 100px 100px;
     }
@@ -345,7 +337,7 @@ footer .links a{
 }
 
 /* MOBILE */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
     .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
         margin: 0;
         left: 0;
@@ -355,7 +347,8 @@ footer .links a{
     .navbar-brand, .navbar-nav>li>a {
         text-shadow: none !important;
     }
-    .navbar {
+    
+    .navbar{
       width: 100%;
       justify-content: space-between;
       align-items: center;
@@ -366,7 +359,7 @@ footer .links a{
         visibility: visible;
     }
     
-    .navbar-collapse {
+    .navbar-collapse{
         position: fixed;
         background: rgba(51, 55, 69, 0.80);
         top: 0;
@@ -381,7 +374,7 @@ footer .links a{
         font-weight: bold;
     }
 
-    .navbar-default .navbar-nav>li>a {
+    .navbar-default .navbar-nav>li>a{
         color: #fff;   
         text-align: center;
         padding: 40px 20px;
@@ -400,7 +393,7 @@ footer .links a{
         font-size: 20px;
     }
     
-.pedalear{
-    width: 50%;   
-}
+    .pedalear{
+        width: 50%;   
+    }
 }
