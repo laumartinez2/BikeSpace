@@ -1,0 +1,180 @@
+﻿{
+  "reservables":[
+  {
+    "parking": "SKYB",
+    "direccion": "Carrer del Mar 5 Bajos",
+    "telefono": "659626940 / 931862322",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3811707",
+    "longitud": "2.1874634",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer de Casp 35",
+    "telefono": "93 363 69 59",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3913534",
+    "longitud": "2.173002",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Gran Via de les Corts Catalanes, 641",
+    "telefono": "93 363 69 59",
+    "precio": "13€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3922063",
+    "longitud": "2.1714061",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer de València, 243",
+    "telefono": "94 363 69 59",
+    "precio": "12€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3923965",
+    "longitud": "2.1626074",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer d'Aragó, 182",
+    "telefono": "95 363 69 59",
+    "precio": "12€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.386621",
+    "longitud": "2.1583395",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer de València, 307",
+    "telefono": "96 363 69 59",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3962803",
+    "longitud": "2.1678977",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer del Bruc, 103",
+    "telefono": "93 363 69 59",
+    "precio": "14€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3959712",
+    "longitud": "2.1671369",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer Comte d'Urgell, 154",
+    "telefono": "94 363 69 59",
+    "precio": "12€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3861207",
+    "longitud": "2.1535732",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Núñez i Navarro",
+    "direccion": "Carrer de València, 375-377",
+    "telefono": "95 363 69 59",
+    "precio": "12€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.400389",
+    "longitud": "2.1732474",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Team Royal 24h",
+    "direccion": "Carrer de la Ciutat de Granada, 32b",
+    "telefono": "603512288 / 930094686",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3977531",
+    "longitud": "2.1991243",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Parking Neptú",
+    "direccion": "Carrer de Neptú, 6",
+    "telefono": "934 60 75 10",
+    "precio": "sin concretar",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.397636",
+    "longitud": "2.1550392",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Parking Villur",
+    "direccion": "Carrer de Villarroel, 45",
+    "telefono": "933 23 37 63",
+    "precio": "sin concretar",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3822982",
+    "longitud": "2.1602909",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Parking Freser Trinxant",
+    "direccion": "Carrer del Freser, 103",
+    "telefono": "93 408 40 11",
+    "precio": "18€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.4169057",
+    "longitud": "2.1829421",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Dbike-us",
+    "direccion": "Carrer de Numància, 40",
+    "telefono": "933215394",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3828653",
+    "longitud": "2.1396742",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Biciestaciobcn",
+    "direccion": "Via Augusta 315, Estació Ferrocarrils Sarrià",
+    "telefono": "932 80 48 49",
+    "precio": "Desde 25€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3987235",
+    "longitud": "2.1245454",
+    "plazas": "?",
+    "horario": "?"
+  },
+  {
+    "parking": "Parking Zipcar",
+    "direccion": "Carrer Poeta Cabanyes, 4",
+    "telefono": "669509948",
+    "precio": "15€ al mes",
+    "niveldeseguridad": "Alto",
+    "latitud": "41.3747023",
+    "longitud": "2.1658516",
+    "plazas": "30 plazas",
+    "horario": "24h"
+  }
+]
+}
