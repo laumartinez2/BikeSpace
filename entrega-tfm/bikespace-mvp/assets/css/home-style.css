@@ -1,0 +1,90 @@
+/* BikeSpace home-style.css */
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* TEXT STYLES */
+
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    color: #000;
+    font-size: 1.6em;
+}
+
+h3{
+    color: #008672;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+#logo{
+    margin: 15% 0px 15%;
+    text-align: center;
+}
+
+.load{
+    background-image: url('../img/parking.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    height: 100% ;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    bottom: 0;
+}
+
+.rowload{
+    margin: 0 4%;
+    background-color: rgba(255,255,255,0.97);
+    padding: 3%;
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    bottom: 4%;
+}
+
+ .rowload-2{
+    padding:  0px 25%;
+}
+
+button{
+    font-size: 15px;
+    background-color: #008672;
+    border: 0px;
+    border-radius: 6px;
+    padding: 12px 22px;
+    margin: 10px 0px;
+    color: #fff;
+    font-weight: 500;
+    transition: all 1s;
+}
+
+button:hover, button:focus{
+    background-color: #005d4f;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+    #logo{margin: 35% 0;}
+     .rowload-2{padding:  0px;}
+}
